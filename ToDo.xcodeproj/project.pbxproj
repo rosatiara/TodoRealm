@@ -27,6 +27,8 @@
 		13A2D1B8276F1CC9005FE07C /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1B6276F1CC9005FE07C /* AddButton.swift */; };
 		13A2D1BB276F24E0005FE07C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 13A2D1BA276F24E0005FE07C /* Realm */; };
 		13A2D1BD276F24E0005FE07C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 13A2D1BC276F24E0005FE07C /* RealmSwift */; };
+		13A2D1BF276F250E005FE07C /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1BE276F250E005FE07C /* RealmManager.swift */; };
+		13A2D1C0276F250E005FE07C /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1BE276F250E005FE07C /* RealmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,7 @@
 		13A2D1B0276F1659005FE07C /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		13A2D1B3276F1884005FE07C /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		13A2D1B6276F1CC9005FE07C /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		13A2D1BE276F250E005FE07C /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 				13A2D1AE276F146A005FE07C /* Views */,
 				13A2D16E276F0B6C005FE07C /* ToDoApp.swift */,
 				13A2D170276F0B6D005FE07C /* Assets.xcassets */,
+				13A2D1BE276F250E005FE07C /* RealmManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -347,6 +351,7 @@
 				13A2D1AB276F1424005FE07C /* TasksView.swift in Sources */,
 				13A2D1B7276F1CC9005FE07C /* AddButton.swift in Sources */,
 				13A2D196276F0B6D005FE07C /* ToDoApp.swift in Sources */,
+				13A2D1BF276F250E005FE07C /* RealmManager.swift in Sources */,
 				13A2D1B1276F1659005FE07C /* TaskRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +365,7 @@
 				13A2D1AC276F1424005FE07C /* TasksView.swift in Sources */,
 				13A2D1B8276F1CC9005FE07C /* AddButton.swift in Sources */,
 				13A2D197276F0B6D005FE07C /* ToDoApp.swift in Sources */,
+				13A2D1C0276F250E005FE07C /* RealmManager.swift in Sources */,
 				13A2D1B2276F1659005FE07C /* TaskRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
