@@ -32,7 +32,9 @@ class RealmManager: ObservableObject {
         }
     }
     
+    // CRUD
     
+    // Create
     func addTask(taskTitle: String) {
         if let localRealm = localRealm {
             do {
@@ -49,7 +51,7 @@ class RealmManager: ObservableObject {
         }
     }
     
-    
+    // Read
     func getTasks(){
         if let localRealm = localRealm {
            let allTasks = localRealm.objects(Task.self).sorted(byKeyPath: "completed")
@@ -60,6 +62,17 @@ class RealmManager: ObservableObject {
             // getting all the objects from localRealm
             // sorting the tasks (uncompleted tasks will be in the beginning of the array
         }
+    }
+    
+    // Update
+    func updateTask(id:ObjectId, completed: Bool) {
+        if let localRealm = localRealm {
+            do {
+                // format = which variable to check
+                let taskToUpdate = localRealm.objects(Task.self).filter(NSPredicate(format: "id == %@", id))
+            } catch {
+                print("Oops! Error updating task \(id) to Realm: \(error)")
+            }
     }
 }
 
