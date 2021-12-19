@@ -11,7 +11,7 @@ struct TasksView: View{
     var body: some View {
         VStack {
             Text("My tasks")
-                .foregroundColor(Color.white)
+                .foregroundColor(Color.black)
                 .font(.title)
                 .bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -19,7 +19,7 @@ struct TasksView: View{
         }
         // make the VStack takes the entire screen
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(red: 0 / 255, green: 8 / 255, blue: 20 / 255))
+        .background(Color(red: 237 / 255, green: 220 / 255, blue: 210 / 255))
     }
 }
 
