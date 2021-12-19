@@ -11,12 +11,14 @@ struct AddButton: View {
     var body: some View {
         ZStack {
             Circle()
-                .frame(width: 45)
+                .frame(width: 50)
                 .foregroundColor(Color(red: 185 / 255, green: 117 / 255, blue: 80 / 255))
-            
-            Image("plus")
-                .frame(width: 50, height: 50)
-        }.frame(height:45)
+          Text("+")
+                .font(.largeTitle)
+                .bold()
+                .foregroundColor(.white)
+
+        }.frame(height:50)
     }
 }
 
