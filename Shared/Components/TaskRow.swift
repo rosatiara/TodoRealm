@@ -11,9 +11,10 @@ struct TaskRow: View {
     var task: String
     var completed: Bool
     var body: some View {
-        HStack {
-            Image("circle")
-        }.background(Color.black)
+        HStack(spacing:18) {
+            Image(completed ? "check-circle" : "circle")
+            Text(task)
+        }
     }
 }
 
