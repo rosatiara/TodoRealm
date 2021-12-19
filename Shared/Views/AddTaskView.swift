@@ -20,7 +20,9 @@ struct AddTaskView: View {
             TextField("Enter your task", text: $title)
                 .textFieldStyle(.roundedBorder)
             Button {
-                print("Task added!")
+                if title != "" {
+                    realmManager.addTask(taskTitle: title)
+                }
                 // dismiss when user taps the button
                 dismiss()
             } label: {
