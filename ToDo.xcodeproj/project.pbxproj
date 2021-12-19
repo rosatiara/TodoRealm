@@ -23,6 +23,8 @@
 		13A2D1B2276F1659005FE07C /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1B0276F1659005FE07C /* TaskRow.swift */; };
 		13A2D1B4276F1884005FE07C /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1B3276F1884005FE07C /* AddTaskView.swift */; };
 		13A2D1B5276F1884005FE07C /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1B3276F1884005FE07C /* AddTaskView.swift */; };
+		13A2D1B7276F1CC9005FE07C /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1B6276F1CC9005FE07C /* AddButton.swift */; };
+		13A2D1B8276F1CC9005FE07C /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1B6276F1CC9005FE07C /* AddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		13A2D1AA276F1424005FE07C /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		13A2D1B0276F1659005FE07C /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		13A2D1B3276F1884005FE07C /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		13A2D1B6276F1CC9005FE07C /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				13A2D1B0276F1659005FE07C /* TaskRow.swift */,
+				13A2D1B6276F1CC9005FE07C /* AddButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -330,6 +334,7 @@
 				13A2D198276F0B6D005FE07C /* ContentView.swift in Sources */,
 				13A2D1B4276F1884005FE07C /* AddTaskView.swift in Sources */,
 				13A2D1AB276F1424005FE07C /* TasksView.swift in Sources */,
+				13A2D1B7276F1CC9005FE07C /* AddButton.swift in Sources */,
 				13A2D196276F0B6D005FE07C /* ToDoApp.swift in Sources */,
 				13A2D1B1276F1659005FE07C /* TaskRow.swift in Sources */,
 			);
@@ -342,6 +347,7 @@
 				13A2D199276F0B6D005FE07C /* ContentView.swift in Sources */,
 				13A2D1B5276F1884005FE07C /* AddTaskView.swift in Sources */,
 				13A2D1AC276F1424005FE07C /* TasksView.swift in Sources */,
+				13A2D1B8276F1CC9005FE07C /* AddButton.swift in Sources */,
 				13A2D197276F0B6D005FE07C /* ToDoApp.swift in Sources */,
 				13A2D1B2276F1659005FE07C /* TaskRow.swift in Sources */,
 			);
