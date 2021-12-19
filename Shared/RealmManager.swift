@@ -60,7 +60,7 @@ class RealmManager: ObservableObject {
                 task in tasks.append(task)
             }
             // getting all the objects from localRealm
-            // sorting the tasks (uncompleted tasks will be in the beginning of the array
+            // sorting the tasks (uncompleted tasks will be in the beginning of the array)
         }
     }
     
@@ -70,6 +70,12 @@ class RealmManager: ObservableObject {
             do {
                 // format = which variable to check
                 let taskToUpdate = localRealm.objects(Task.self).filter(NSPredicate(format: "id == %@", id))
+                guard !taskToUpdate.isEmpty else {return}
+                try localRealm.write {
+                    taskToUpdate[0].completed = completed
+                    getTasks()
+                    print("Task with id \(id) is \(completed)")
+                }
             } catch {
                 print("Oops! Error updating task \(id) to Realm: \(error)")
             }
