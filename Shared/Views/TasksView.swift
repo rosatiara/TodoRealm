@@ -24,7 +24,7 @@ struct TasksView: View{
                         .onTapGesture {
                             realmManager.updateTask(id: task.id, completed:!task.completed)
                         }
-                        .swipeActions(edge: .leading){
+                        .swipeActions(edge: .trailing){
                             Button(role: .destructive){
                                 realmManager.deleteTask(id: task.id)
                             } label: {
