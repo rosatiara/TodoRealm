@@ -23,6 +23,7 @@ struct AddTaskView: View {
                     .foregroundColor(.white)
                     .padding()
                     .padding(.horizontal)
+                    .frame(maxHeight:45)
                     .cornerRadius(30)
                     .background(Color(red: 203 / 255, green: 153 / 255, blue: 126 / 255)).ignoresSafeArea()
             }
