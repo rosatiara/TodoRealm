@@ -8,7 +8,7 @@
 import SwiftUI
 struct AddTaskView: View {
     @State private var title: String = ""
-    
+    @EnvironmentObject var realmManager: RealmManager
     // dismiss is a new environment variable that allows us to dismiss a view
     @Environment(\.dismiss) var dismiss
     var body: some View {
@@ -42,5 +42,6 @@ struct AddTaskView: View {
 struct AddTaskView_Previews: PreviewProvider {
     static var previews: some View {
         AddTaskView()
+            .environmentObject(RealmManager())
     }
 }
