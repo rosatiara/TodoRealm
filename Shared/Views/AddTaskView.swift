@@ -8,6 +8,9 @@
 import SwiftUI
 struct AddTaskView: View {
     @State private var title: String = ""
+    
+    // dismiss is a new environment variable that allows us to dismiss a view
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
             Text("Create a new task")
@@ -18,6 +21,8 @@ struct AddTaskView: View {
                 .textFieldStyle(.roundedBorder)
             Button {
                 print("Task added!")
+                // dismiss when user taps the button
+                dismiss()
             } label: {
                 Text("Add task")
                     .foregroundColor(.white)
