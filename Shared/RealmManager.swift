@@ -40,7 +40,7 @@ class RealmManager: ObservableObject {
                     // see Task.swift
                     let newTask = Task(value:["title": taskTitle, "completed": false])
                     localRealm.add(newTask)
-                    getTasks() // updating tasks array everytime new task is added
+                    getTasks() // updating tasks array everytime new task is added!
                     print("Task has been successfully added to Realm!: \(newTask)")
                 }
             } catch {
