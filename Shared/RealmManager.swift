@@ -12,4 +12,6 @@ import RealmSwift
 // to be notified of changes in this class
 class RealmManager: ObservableObject {
     
+    // priavte(set) means we can only set the variable between the RealmManager class.
+    private(set) var localRealm: Realm?
 }
