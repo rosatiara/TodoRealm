@@ -10,7 +10,12 @@ import SwiftUI
 struct TasksView: View{
     var body: some View {
         VStack {
-            Text("hi")
+            Text("My tasks")
+                .foregroundColor(Color.white)
+                .font(.title)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
         }
         // make the VStack takes the entire screen
         .frame(maxWidth: .infinity, maxHeight: .infinity)
