@@ -14,7 +14,7 @@ class RealmManager: ObservableObject {
     // private(set) means we can only set the variable between the RealmManager class.
     // '?' means optional because opening a Realm might throw an error.
     private(set) var localRealm: Realm?
-    //open Realm everytime we initialize the class.
+    //open Realm every initialization
     init(){
         openRealm()
     }
