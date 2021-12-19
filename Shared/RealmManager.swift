@@ -29,4 +29,29 @@ class RealmManager: ObservableObject {
             print("Error opening Realm \(error)")
         }
     }
+    func addTask(taskTitle: String) {
+        if let localRealm = localRealm {
+            do {
+                try localRealm.write {
+                    // see Task.swift
+                    let newTask = Task(value:["title": taskTitle, "completed": false])
+                    localRealm.add(newTask)
+                    print("Task has been successfully added to Realm!: \(newTask)")
+                }
+            } catch {
+                print("Sorry! error adding your task to Realm: \(error)")
+            }
+        }
+    }
 }
+
+/** use this code when you need to update the schema */
+// add migrationBlock everytime you update the schema to prevent app crash.
+
+
+//let config = Realm.Configuration(schemaVersion: 1, migrationBlock: {
+//    migration, oldSchemaVersion in
+//    if oldSchemaVersion > 1 {
+//        //
+//    }
+//})
