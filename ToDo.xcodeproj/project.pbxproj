@@ -17,6 +17,8 @@
 		13A2D199276F0B6D005FE07C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D16F276F0B6C005FE07C /* ContentView.swift */; };
 		13A2D19A276F0B6D005FE07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A2D170276F0B6D005FE07C /* Assets.xcassets */; };
 		13A2D19B276F0B6D005FE07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A2D170276F0B6D005FE07C /* Assets.xcassets */; };
+		13A2D1AB276F1424005FE07C /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1AA276F1424005FE07C /* TasksView.swift */; };
+		13A2D1AC276F1424005FE07C /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2D1AA276F1424005FE07C /* TasksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		13A2D18E276F0B6D005FE07C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A2D192276F0B6D005FE07C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		13A2D194276F0B6D005FE07C /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		13A2D1AA276F1424005FE07C /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +100,8 @@
 		13A2D16D276F0B6C005FE07C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				13A2D1AE276F146A005FE07C /* Views */,
 				13A2D16E276F0B6C005FE07C /* ToDoApp.swift */,
-				13A2D16F276F0B6C005FE07C /* ContentView.swift */,
 				13A2D170276F0B6D005FE07C /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +142,15 @@
 				13A2D194276F0B6D005FE07C /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		13A2D1AE276F146A005FE07C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13A2D1AA276F1424005FE07C /* TasksView.swift */,
+				13A2D16F276F0B6C005FE07C /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13A2D198276F0B6D005FE07C /* ContentView.swift in Sources */,
+				13A2D1AB276F1424005FE07C /* TasksView.swift in Sources */,
 				13A2D196276F0B6D005FE07C /* ToDoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13A2D199276F0B6D005FE07C /* ContentView.swift in Sources */,
+				13A2D1AC276F1424005FE07C /* TasksView.swift in Sources */,
 				13A2D197276F0B6D005FE07C /* ToDoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
