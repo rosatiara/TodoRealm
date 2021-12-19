@@ -20,6 +20,7 @@ class RealmManager: ObservableObject {
         openRealm()
         getTasks()
     }
+    
     func openRealm(){
         do {
             let config = Realm.Configuration(schemaVersion: 1)
@@ -79,9 +80,26 @@ class RealmManager: ObservableObject {
             } catch {
                 print("Oops! Error updating task \(id) to Realm: \(error)")
             }
+        }
+    }
+    
+    // Delete
+    func deleteTask(id: ObjectId) {
+        if let localRealm = localRealm {
+            do {
+                let taskToDelete = localRealm.objects(Task.self).filter(NSPredicate(format: "id == %@", id))
+                guard !taskToDelete.isEmpty else {return}
+                try localRealm.write {
+                    localRealm.delete(taskToDelete)
+                    getTasks()
+                    print("Delete task with id \(id)")
+                }
+            } catch {
+                print("Error deleting task \(id) from Realm: \(error)")
+            }
+        }
     }
 }
-
 /** use this code when you need to update the schema */
 // add migrationBlock everytime you update the schema to prevent app crash.
 
